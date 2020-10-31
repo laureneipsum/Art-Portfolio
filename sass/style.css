@@ -163,7 +163,7 @@ h1:hover {
 #statue-image {
   display: -ms-grid;
   display: grid;
-  height: 0vh;
+  height: 100vh;
   width: 50%;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -171,7 +171,7 @@ h1:hover {
       grid-template-rows: 1fr 1fr;
 }
 
-#statue-image #staTete {
+#statue-image #statue_head {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -188,7 +188,7 @@ h1:hover {
   width: 50%;
 }
 
-#statue-image #staFront {
+#statue-image #statue_piedestal {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -205,7 +205,7 @@ h1:hover {
   width: 50%;
 }
 
-#statue-image #staYeux {
+#statue-image #statue_eyes {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -239,7 +239,7 @@ h1:hover {
   width: 50%;
 }
 
-#statue-image #staBienvenue {
+#statue-image #statue_txt-bienvenue {
   font-size: 120px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -260,7 +260,7 @@ h1:hover {
           animation-name: moveSta-lecume;
 }
 
-#statue-image #staDansla {
+#statue-image #statue_txt-dans_la {
   font-size: 100px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -281,7 +281,7 @@ h1:hover {
           animation-name: moveSta-des;
 }
 
-#statue-image #staGalerie {
+#statue-image #statue_txt-galerie {
   font-size: 120px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
