@@ -383,8 +383,8 @@ h1:hover {
   display: grid;
   height: 100vh;
   width: 50%;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
 }
@@ -395,8 +395,9 @@ h1:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  z-index: 8;
-  margin: 38px 0 0 104px;
+  z-index: 16;
+  margin-top: 130px;
+  margin-left: 500px;
 }
 
 #statue_head:hover {
@@ -430,8 +431,9 @@ h1:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  margin: 72px 0 0 105px;
-  z-index: 3;
+  margin-top: 140px;
+  margin-left: 500px;
+  z-index: 14;
   -webkit-animation: 3s move_statue_brow;
           animation: 3s move_statue_brow;
 }
@@ -468,8 +470,9 @@ h1:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  margin: 62px 0 0 52px;
-  z-index: 1;
+  margin-top: 174px;
+  margin-left: 500px;
+  z-index: 12;
   -webkit-animation: 3s move_statue_eyes;
           animation: 3s move_statue_eyes;
 }
@@ -506,7 +509,8 @@ h1:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  margin: 74px 0 0 42px;
+  margin-top: 190px;
+  margin-left: 450px;
   z-index: 10;
   -webkit-animation: 3s move_statue_piedestal;
           animation: 3s move_statue_piedestal;
@@ -540,8 +544,8 @@ h1:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  margin: 50px 0 0 230px;
-  z-index: 2;
+  margin: 150px 300px 0 700px;
+  z-index: 15;
   -webkit-animation: 4s move_txt-bienvenue;
           animation: 4s move_txt-bienvenue;
 }
@@ -582,8 +586,8 @@ h1:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  margin: 170px 0 0 280px;
-  z-index: 2;
+  margin: 280px 300px 0 700px;
+  z-index: 13;
   -webkit-animation: 3s move_txt-dans_la;
           animation: 3s move_txt-dans_la;
 }
@@ -623,16 +627,16 @@ h1:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  margin: 256px 0 0 230px;
-  z-index: 4;
+  margin: 410px 300px 0 700px;
+  z-index: 11;
   -webkit-animation: 4s move_txt-galerie;
           animation: 4s move_txt-galerie;
 }
 
 @-webkit-keyframes move_txt-galerie {
   0% {
-    -webkit-transform: translatey(-27rem) scale(3);
-            transform: translatey(-27rem) scale(3);
+    -webkit-transform: translatey(0rem) scale(1.2);
+            transform: translatey(0rem) scale(1.2);
     opacity: 0;
   }
   100% {
@@ -644,8 +648,8 @@ h1:hover {
 
 @keyframes move_txt-galerie {
   0% {
-    -webkit-transform: translatey(-27rem) scale(3);
-            transform: translatey(-27rem) scale(3);
+    -webkit-transform: translatey(0rem) scale(1.2);
+            transform: translatey(0rem) scale(1.2);
     opacity: 0;
   }
   100% {
