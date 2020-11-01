@@ -12,7 +12,6 @@ $bg-black: #1e2334;
 html {
   scroll-behavior: smooth;
 }
-
 body {
     box-sizing: border-box;
     font :  800 1.3rem Raleway, sans-serif;
@@ -42,16 +41,24 @@ body {
     transition-property: transform;
     transform-origin: 100% 100%;
     display: inherit;
+    z-index: 99999;
     }
     .link-grow {
-        transform: scale(2);
+        transform: scale(3);
         background: rgba(255, 255, 255, 0.062);
       }
       .text-pict {
-        transform: scale(4);
-        background-image: image('background.png');
-        -webkit-background-image: image('background.png');
+        transform: scale(3.9);
+        background: center 200% / cover no-repeat url('/assets/jimmy.png');
       }
+      // .bullemove1{
+      //   transform: scale(3.9);
+      //   background:  center 200% / cover no-repeat url('/assets/img/statue/1-statue-head-lecume_des_couleurs.png');
+      // }
+      // .bullemove2{
+      //   transform: scale(3.9);
+      //   background:  center 200% / cover url('/assets/jimmy.png');
+      // }
       .scrollDown{
         width: 30px;
         height: 54px;
@@ -80,6 +87,9 @@ body {
             transform: translateY(25px);
          }
        }
+      }
+      .body-click{
+        background: rgba(253, 245, 230, 0);
       }
   
        .title_animate {
@@ -120,6 +130,7 @@ body {
        text-align: end;
        margin-right: 10%;
      }
+    
 /*--------menu------------*/
  /* Menu burger */
 #menu-burger {
@@ -300,16 +311,16 @@ body {
       // margin : 38px 0 0 104px;
       margin-top: 130px;
       margin-left: 500px;
+      animation: 4s move_statue_head;
        &:hover {
          animation: 4s move_statue_head;
        }
      }
         @keyframes move_statue_head {
           from {
-            margin-left: 50%;
-            width:80%
+            width:40%
           }to{
-            width:50%;
+            width:42%;
           }
         }
        #statue_brow{
@@ -320,6 +331,9 @@ body {
         margin-left: 500px;
         z-index: 14;
         animation: 3s move_statue_brow;
+        &:hover {
+          animation: 4s move_statue_brow;
+        }
         }
          @keyframes move_statue_brow {
            0% {
@@ -338,6 +352,9 @@ body {
       margin-left: 500px;
        z-index: 12;
        animation: 3s move_statue_eyes;
+       &:hover {
+        animation: 4s move_statue_eyes;
+      }
        }
        @keyframes move_statue_eyes {
          from {
@@ -356,6 +373,9 @@ body {
         margin-left: 450px;
         z-index: 10;
         animation: 3s move_statue_piedestal;
+        &:hover {
+          animation: 4s move_statue_piedestal;
+        }
          }
          @keyframes  move_statue_piedestal {
            from {
@@ -374,6 +394,9 @@ body {
        margin : 150px 300px 0 700px;
        z-index: 15;
        animation: 4s move_txt-bienvenue;
+       &:hover {
+        animation: 4s move_txt-bienvenue;
+      }
        }
        @keyframes move_txt-bienvenue {
          0% {
@@ -393,6 +416,9 @@ body {
        margin : 280px 300px 0 700px;
        z-index: 13;
        animation: 3s move_txt-dans_la;
+       &:hover {
+        animation: 4s move_txt-dzns_la;
+      }
        }
        @keyframes move_txt-dans_la {
          0% {
@@ -410,7 +436,10 @@ body {
        grid-row: 1 / 3;
        margin : 410px 300px 0 700px;
        z-index: 11;
-       animation: 4s move_txt-galerie;
+      //  animation: 4s move_txt-galerie;
+       &:hover {
+        animation: 4s move_txt-galerie;
+      }
        } 
        @keyframes move_txt-galerie {
          0% {
@@ -421,3 +450,227 @@ body {
            opacity: 1;
          }
        }
+//*************************************************//
+//*************************************************//
+// .s4{
+//   // background: left / contain no-repeat  url('/assets/img/icons/avion-contact.svg');
+//   // background-position: left 100px;
+  
+// }
+.paperPlane{
+  position: absolute;
+  height: 50%;
+  z-index: -99;
+  animation: 30s paperPlaneMove linear 30s infinite alternate;
+       }
+      @keyframes paperPlaneMove {
+      0% {
+          // transform: translatey(-100%) scale(1);
+          transform: translateX(-200%) scale(0.9);
+          // transform: translatey(-20%) scale(0.9);
+          opacity: 0;
+      }10%{
+          transform: translatex(+220%) scale(1);
+          // transform: translatey(-20%) scale(0.9);
+          opacity: 1;    
+     
+      }50%{
+          transform: translatey(4%) scale(1);
+          opacity: 1;
+        }}
+        
+  
+    .allBoxesContact{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin: 0 50% 2% 50%;
+      z-index: 1;
+    
+        // height: 100vh;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr 1fr 1fr;
+        // grid-template-areas: ". . box1  . . "
+        //                      ". box2 . . ."
+        //                      " . box3 . . box4 "
+        //                      "  footer footer footer footer footer  ";
+    }
+    .box1Contact{        /* --- logo --- */
+        /* background-color: #fceb00; */
+        // grid-area: box1;
+        // grid-column: 3/4;
+        display: flex;
+        flex-direction: column;
+        
+         
+         align-self: center;
+        // width: 50%;
+    } 
+    
+    .logoTitleContact {
+      --fill-color: #FE1D57;
+      position: relative;
+      display: block;
+      font: 700 9rem Raleway, sans-serif;
+      margin: 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-text-stroke: 2px var(--fill-color);
+      background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: 0.5s linear;
+             &:hover {
+             background-size: 100%;
+            }
+      }
+      
+    .logoSpanContact{
+        color: $base-yellow;
+        font: 700 2.21rem Raleway, sans-serif;
+        margin-top: -2px;
+    }
+    
+    
+    .box3Contact{               /* --- Content --- */
+        background-color: #08080815; 
+        // grid-column: 2/5;
+        /* border: solid 13px #FFF685; */
+        /* justify-content: center;
+        display: flex; */
+        /* width: 100%;
+        height: 80%; */
+        font: 700 2rem Raleway, sans-serif;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+    }  
+
+
+   
+    input  {
+        background-color:$bg-black;
+        border:  1px solid $base-pink;
+        border-radius: 1px;
+        height: 40px;
+    }
+    textarea {
+      background-color:$bg-black;
+      border:  2px solid $base-pink;
+      border-radius: 5px;
+    }
+    .identite {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+    .objet{
+      display: flex;
+      justify-content: space-around;
+        input{
+          width: 80%;
+        }
+    }
+    .messageAlign{
+      display: flex;
+        input{
+          width: 80%;
+        }
+    }
+    
+    textarea::placeholder {
+      color: #74747136;
+      font: 700 1.4rem Raleway, sans-serif; 
+    }
+    input::placeholder {
+        color: #74747136;
+        font: 700 1.4rem Raleway, sans-serif; 
+    }
+
+    .button {
+      width: 40%;
+      float: right;
+      margin-top: 15px;
+      color:$pur-white;
+      font: 700 1.4rem Raleway, sans-serif;
+      &:hover {
+        background: $base-pink;
+      }
+    }
+    .box4Contact{               /* --- Reseaux sociaux --- */
+      background-color: $bg-black;
+      float: right;
+      // margin-left: 50%;
+      margin-top: 10%;
+      
+      // padding-right: 50px;
+  }  
+      .rsInsta{
+          width: 2em;
+          margin-bottom: 40%;    
+          }
+          .rsInsta:hover{
+          transform: scale(1.3);   
+          }
+           .rsPinterest{
+           width: 2em;  
+          }
+          .rsPinterest:hover{
+          transform: scale(1.3);   
+          }
+
+    .box5-footer{ 
+      background-color: #2a3046; 
+      grid-area: footer; 
+      height: 15vh;
+      text-align: center;
+      padding-top: 1.5%;
+      margin-top: 0;
+ }  
+    /*-----------------*/   
+
+        @keyframes scrollMouse {
+            from{
+                opacity: 1;
+                transform: translateX(0);  
+            }
+            to{
+                opacity: 0;
+                transform: translateY(25px);
+            }
+        }
+        @keyframes moveRight {
+            0% {
+              transform: translateX(-27rem) scale(0.9);
+              opacity: 0;
+            }
+            100% {
+              transform: translateX(0rem) scale(1);
+              opacity: 1;
+            }
+          }
+          
+          @keyframes moveLeft {
+            0% {
+              transform: translateX(0rem) scale(1);
+              opacity: 1;
+            }
+            100% {
+              transform: translateX(27rem) scale(0.9);
+              opacity: 0;
+            }
+          }
+          
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
