@@ -1,0 +1,192 @@
+//*******************************************//
+//*********************GLOBAL****************//
+//*******************************************//
+
+#loading-overlay{
+	width: 100%;
+	height:100%;
+	position: fixed;
+	float: center;
+	background-color: #000;
+	opacity: 0;
+	display: none;
+}
+.loading-animation {
+	position:absolute;
+	top:50%;
+	left:50%;
+}
+
+
+/* ZOOM ----------- */
+#container-zoom{
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	height: 0;
+	background-color: #313131;
+	display: none;
+}
+#zoom{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#bubble-tail{
+	position: absolute;
+	margin-top: 20px;
+
+	width: 0; 
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #313131;
+}
+#overlay-close{
+	z-index: 10;
+	background-color: #313131;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-ms-transform: translate(-50%,-50%); /* IE 9 */
+	-webkit-transform: translate(-50%,-50%); /* Safari */
+	transform: translate(-50%,-50%);
+	transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-webkit-transition: opacity .15s ease-in-out
+}
+#overlay-close:hover{
+	opacity: 0.8;
+}
+.overlay-close-x{
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width:100%;
+	color: white;
+	font-size: 4em;
+	text-align: center;
+
+	top: 50%;
+	-ms-transform: translateY(-50%); /* IE 9 */
+	-webkit-transform: translateY(-50%); /* Safari */
+	transform: translateY(-50%);
+}
+
+//*********************************************//
+//*********************Galerie1****************//
+//*********************************************//
+#main-stage{
+	position: relative;
+	//  float: center;
+	 width: auto;
+	 height:auto;
+}
+#grid{
+	background-color: rgba(255, 255, 255, 0);
+	// position: absolute;
+	// max-width: 100%;
+	// margin: 0;
+	// padding: 0;
+	height:auto;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+	align-content: center;
+	//padding: 150px;  //contour galerie
+}
+.image-grid, #container-zoom{
+	position: relative;
+	flex: 1 1 auto;
+	margin: 50px; // marge entre images
+}
+.image-grid{
+	min-width: 150px;
+	min-height: 120px;
+    background-color: rgba(255, 255, 255, 0);
+	max-width: 350px;
+	max-height: 550px;
+	transition: opacity .15s ease-in-out;
+	background-size: cover;
+}
+
+.image-grid:hover{
+	opacity:0.75;
+}
+.image-grid img, #zoom img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.image-grid img{
+	position: relative;
+	object-fit: cover;
+}
+.compat-object-fit {
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.title_innerGalerie{
+	   font-size: 120px;
+       font-family: "Oswald", sans-serif;
+       font-weight: 700;
+	   text-transform: uppercase;
+	   color: $base-pink;
+	   margin-left: 20px;
+	   margin-bottom: 3px;
+}
+.description_name{
+	   font-size: 15px;
+       font-family: "Oswald", sans-serif;
+       font-weight: 700;
+       text-transform: uppercase;
+	   color: $base-pink;
+	   margin-bottom: 0;
+}
+.description_technical{
+	   font-size: 12px;
+       font-family: "Oswald", sans-serif;
+       font-weight: 700;
+       text-transform: uppercase;
+	   color: #ffffff;
+	   margin-top: 0;
+}
+//*********************************************//
+//*********************Galerie2****************//
+//*********************************************//
+.toile img, #zoom img{
+	display: block;
+	width: 200%;
+	height: 100%;
+	margin: auto;	
+}
+.title_innerGalerie2{
+	font-size: 120px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $base-yellow;
+	margin-left: 20px;
+	margin-bottom: 3px;
+}
+
+
+//*********************************************//
+//*********************Galerie3****************//
+//*********************************************//
+  
+.title_innerGalerie3{
+	font-size: 100px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $base-blue;
+	margin-left: 20px;
+	margin-bottom: 3px;
+}

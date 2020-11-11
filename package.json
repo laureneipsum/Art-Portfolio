@@ -4,7 +4,8 @@
   "description": "Art Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/style.scss:./sass/style.css"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,6 @@
   "homepage": "https://github.com/Laurene-Ipsum/Art-Portfolio#readme",
   "dependencies": {
     "sass": "^1.28.0"
-  }
+  },
+  "devDependencies": {}
 }

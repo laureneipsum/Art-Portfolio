@@ -6,7 +6,8 @@ $base-pink: #FE1D57;
 $pur-white:#fff;
 $bg-black: #1e2334;
 
-// @import "/sass/mixin.scss";
+
+@import "./galerie.scss";
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 //--------------------------------------------------------//
 html {
@@ -19,6 +20,7 @@ body {
     cursor: none;
     margin: 0;
     background-color: $bg-black;
+    // overflow-x: hidden;
     // overflow: hidden;
 }
     a {
@@ -285,24 +287,15 @@ body {
 	}
 }
 
-    
-  
-
-
-
-
-
 /* -----------statue ----------*/
-// .section2{
-//   top: 50%;
-//   left: 50%;
-// }
+
       #statue-image {
       display: grid;
       height: 100vh;
       width: 50%;
       grid-template-columns: 1fr;  
       grid-template-rows: 1fr 1fr;
+      justify-content: center;
       }
      #statue_head{   
       grid-column: 1 / 1;
@@ -450,13 +443,9 @@ body {
            opacity: 1;
          }
        }
+
 //*************************************************//
 //*************************************************//
-// .s4{
-//   // background: left / contain no-repeat  url('/assets/img/icons/avion-contact.svg');
-//   // background-position: left 100px;
-  
-// }
 .paperPlane{
   position: absolute;
   height: 50%;
@@ -478,37 +467,20 @@ body {
           transform: translatey(4%) scale(1);
           opacity: 1;
         }}
-        
-  
+
     .allBoxesContact{
       display: flex;
       justify-content: center;
       flex-direction: column;
       margin-bottom: 20px;
       margin: 0 50% 2% 50%;
-      z-index: 1;
-    
-        // height: 100vh;
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        // grid-template-rows: 1fr 1fr 1fr 1fr;
-        // grid-template-areas: ". . box1  . . "
-        //                      ". box2 . . ."
-        //                      " . box3 . . box4 "
-        //                      "  footer footer footer footer footer  ";
+      z-index: 1;                  
     }
     .box1Contact{        /* --- logo --- */
-        /* background-color: #fceb00; */
-        // grid-area: box1;
-        // grid-column: 3/4;
         display: flex;
         flex-direction: column;
-        
-         
          align-self: center;
-        // width: 50%;
-    } 
-    
+    }  
     .logoTitleContact {
       --fill-color: #FE1D57;
       position: relative;
@@ -526,23 +498,14 @@ body {
              &:hover {
              background-size: 100%;
             }
-      }
-      
+      }   
     .logoSpanContact{
         color: $base-yellow;
         font: 700 2.21rem Raleway, sans-serif;
         margin-top: -2px;
-    }
-    
-    
+    }  
     .box3Contact{               /* --- Content --- */
         background-color: #08080815; 
-        // grid-column: 2/5;
-        /* border: solid 13px #FFF685; */
-        /* justify-content: center;
-        display: flex; */
-        /* width: 100%;
-        height: 80%; */
         font: 700 2rem Raleway, sans-serif;
         margin-top: 50px;
         display: flex;
@@ -550,9 +513,6 @@ body {
         justify-content: center;
         width: 50%;
     }  
-
-
-   
     input  {
         background-color:$bg-black;
         border:  1px solid $base-pink;
@@ -582,7 +542,6 @@ body {
           width: 80%;
         }
     }
-    
     textarea::placeholder {
       color: #74747136;
       font: 700 1.4rem Raleway, sans-serif; 
@@ -591,7 +550,6 @@ body {
         color: #74747136;
         font: 700 1.4rem Raleway, sans-serif; 
     }
-
     .button {
       width: 40%;
       float: right;
@@ -605,10 +563,7 @@ body {
     .box4Contact{               /* --- Reseaux sociaux --- */
       background-color: $bg-black;
       float: right;
-      // margin-left: 50%;
       margin-top: 10%;
-      
-      // padding-right: 50px;
   }  
       .rsInsta{
           width: 2em;
@@ -623,7 +578,6 @@ body {
           .rsPinterest:hover{
           transform: scale(1.3);   
           }
-
     .box5-footer{ 
       background-color: #2a3046; 
       grid-area: footer; 
@@ -632,7 +586,7 @@ body {
       padding-top: 1.5%;
       margin-top: 0;
  }  
-    /*-----------------*/   
+/*-----------------*/   
 
         @keyframes scrollMouse {
             from{
@@ -674,3 +628,8 @@ body {
               opacity: 1;
             }
           }
+
+
+         
+      
+   
