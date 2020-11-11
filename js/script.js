@@ -3,7 +3,8 @@
 //=========================================//
 let mouseCursor = document.querySelector(".cursor");
 let menu_anim_cursor = document.querySelectorAll('#menu-burger');
-let title_animate_mouse = document.querySelectorAll('.title_animate h1');
+let title_animate_mouse = document.querySelectorAll('.title1');
+
 // let title_animate_mouse_two = document.querySelectorAll(".bulle2 span");
 // let title_animate_mouse_one = document.querySelectorAll(".bulle1 span");
 
@@ -28,9 +29,10 @@ let title_animate_mouse = document.querySelectorAll('.title_animate h1');
       h1.addEventListener("mouseover", () => {
           mouseCursor.classList.add("text-pict");
       });
-    }); 
-
-
+	});
+	
+	//---------- 
+	
 
 //=========================================//
 //===========ANIMATION BURGER============= //

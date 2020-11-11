@@ -51,8 +51,9 @@ body {
       }
       .text-pict {
         transform: scale(3.9);
-        background: center 200% / cover no-repeat url('/assets/jimmy.png');
+        background: center 200% / cover no-repeat url('/assets/vrac.png');
       }
+      
       // .bullemove1{
       //   transform: scale(3.9);
       //   background:  center 200% / cover no-repeat url('/assets/img/statue/1-statue-head-lecume_des_couleurs.png');
@@ -126,8 +127,30 @@ body {
      transition: 0.5s linear;
             &:hover {
             background-size: 100%;
-           }
+           }}
+     h2 {
+            --fill-colortwo: #FE1D57;
+
+            position: relative;
+            display: block;
+            padding: 4px 0;
+            font: 700 9rem Raleway, sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            -webkit-text-stroke: 2px var(--fill-colortwo);
+            // background: linear-gradient(var(--fill-colortwo) 0 100%) left / 0 no-repeat;
+            background: linear-gradient(90deg, rgba(254,29,87,1) 0%, rgba(249,88,144,1) 50%, rgba(255,246,133,1) 100%) left / 0 no-repeat;
+            
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            transition: 0.5s linear;
+            animation: 1.2s infinite;
+                   &:hover {
+                   background-size: 100%;
+                  }
      }
+     
      .text_home {
        text-align: end;
        margin-right: 10%;
