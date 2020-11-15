@@ -139,8 +139,7 @@ body {
             text-transform: uppercase;
             -webkit-text-stroke: 2px var(--fill-colortwo);
             // background: linear-gradient(var(--fill-colortwo) 0 100%) left / 0 no-repeat;
-            background: linear-gradient(90deg, rgba(254,29,87,1) 0%, rgba(249,88,144,1) 50%, rgba(255,246,133,1) 100%) left / 0 no-repeat;
-            
+            background: linear-gradient(90deg, rgba(254,29,87,1) 0%, rgba(249, 88, 144, 0) 50%,  rgba(254,29,87,1) 0% 100%) left / 0 no-repeat;
             color: transparent;
             background-clip: text;
             -webkit-background-clip: text;
@@ -155,7 +154,54 @@ body {
        text-align: end;
        margin-right: 10%;
      }
+  
+     .from-right,
+     .from-left {
+         opacity: 0;
+         transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+     }
+     .from-right {
+         transform: translate(50px,-30px);
+     }
+     .from-left {
+         transform: translate(-50px,-30px);
+     }  
+
+     ::-webkit-scrollbar {
+     
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(129, 131, 32, 0.949) 0%,
+      //   rgb(55, 145, 32) 48%,
+      //   rgba(116, 131, 32, 0.961) 100%
+      // );
+      width: 15px;
+      // cursor: pointer;
+      // border-radius: 5px;
+    }
     
+    ::-webkit-scrollbar-track {
+      background: #0c0e16;
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(221, 201, 185, 0.95) 0%,
+      //   rgba(31, 21, 13, 0.8202194166033993) 48%,
+      //   rgba(31, 21, 13, 0.8139498241269103) 100%
+      // );
+      // border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: $base-blue;
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(42, 32, 131, 0.949) 0%,
+      //   rgb(40, 32, 145) 48%,
+      //   rgba(115, 32, 131, 0.961) 100%
+      // );
+      // border-radius: 5px;
+    }
+    
+
 /*--------menu------------*/
  /* Menu burger */
 #menu-burger {
@@ -328,18 +374,21 @@ body {
       // margin : 38px 0 0 104px;
       margin-top: 130px;
       margin-left: 500px;
-      animation: 4s move_statue_head;
+       animation: 4s move_statue_head;
+    
        &:hover {
-         animation: 4s move_statue_head;
+         
+         transform: scale(1.1);
+         transition: .3s ease-in-out;
        }
      }
-        @keyframes move_statue_head {
-          from {
-            width:40%
-          }to{
-            width:42%;
-          }
-        }
+        // @keyframes move_statue_head {
+        //   from {
+        //     width:40%
+        //   }to{
+        //     width:42%;
+        //   }
+        // }
        #statue_brow{
         grid-column: 1 / 1;
         grid-row: 1 / 2;
