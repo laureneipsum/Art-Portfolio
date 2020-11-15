@@ -490,7 +490,24 @@ body {
            opacity: 1;
          }
        }
-
+//*************************************************//
+//*************************************************//
+.section3{
+ margin: 5%;
+}
+.logoTitleContact{
+text-align: center;
+}
+.aproposimg {
+  width: 30em;
+}
+.abouttxt{
+  width: 30em;
+}
+.aboutme {
+  display: flex;
+  justify-content: center;
+}
 //*************************************************//
 //*************************************************//
 .paperPlane{
@@ -517,32 +534,43 @@ body {
           margin-top: 50px;
         }
         66%{
-          transform: scaleY(1.2);
-          width: 43px;
-          height:25px;
+          transform: scaleY(0.5);
+          // width: 43px;
+          // height:25px;
+          // margin-top: 30px;
+          width: 56px;
+          height:29px;
           margin-top: 30px;
         }
         80% {
           
-          transform: scaleY(-1);
-          width: 20px;
-          height:17px;
-          margin-top: -30px;
-          // transform: translate(3px, 7vh);
+          transform: scaleY(0.7);
+          // width: 20px;
+          // height:17px;
+          width: 56px;
+          height:29px;
+          margin-top: 20px;
          
         }
         96% {
-          left: 80%;
-          transform: scaleY(-4);
-          width: 20px;
-          height:17px;
-          margin-top: 550px;
-          // transform: translate(3px, 7vh);
+         
+          transform: scaleY(1);
+          // width: 20px;
+          // height:17px;
+          // margin-top: 50px;
+          width: 56px;
+          height:29px;
+          margin-top: 10px;
+        
          
         }
         100% {
       
-          
+          left: 100%;
+          transform: scaleY(1);
+          width: 20px;
+          height:17px;
+          margin-top: 0px;
       
          
           // transform: translate(3px, 7vh);
