@@ -22,10 +22,10 @@
          </div>
         <nav id="menu">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">GALERIE</a></li>
-                <li><a href="#">A PROPOS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#anchor_home">HOME</a></li>
+                <li><a href="#anchor_galerie">GALERIE</a></li>
+                <li><a href="#anchor_about">A PROPOS</a></li>
+                <li><a href="#anchor_contact">CONTACT</a></li>
             </ul>
         </nav>
 <!-----Section 1 - home-page with Title animate----->
@@ -63,7 +63,7 @@
 	<div class="particle"></div>
 </div>
 <!--Particules-->
-        <div class="title_animate">
+        <div id="anchor_home" class="title_animate">
             <h1 class="title1">L'écume des</h1>
             <h2 class="title2">COULEURS</h2> 
         </div>
@@ -84,7 +84,7 @@
 <!-----Section 3 - Gallery--------------------->
 <section>
     <!-----Grid-1------->
-      <div id="main-stage">
+      <div id="anchor_galerie" id="main-stage">
         <h3 class="title_innerGalerie">Des portraits colorés</h3>
           <div id="grid">
                <div class="image-grid"><img src="./assets/toiles/nietsche_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
@@ -106,8 +106,7 @@
                         <p class="description_name">En vrac 1</p>
                         <p class="description_technical">Acrylique sur toile - xx x xxcm</p></div>
             </div>  
-
-            <h3 class="title_innerGalerie2">Des animaux qui posent</h3>
+        <h3 class="title_innerGalerie2">Des animaux qui posent</h3>
             <div id="grid">
                <div class="image-grid"><img src="./assets/toiles/cochon.png" alt="Peinture nietsche_lecume_des_couleurs">
                     <p class="description_name">Mr cochon</p>
@@ -119,8 +118,7 @@
                     <p class="description_name">Zebre Prétentieux</p>
                     <p class="description_technical">Acrylique sur toile xx x xx cm</p></div>
             </div>
-
-            <h3 class="title_innerGalerie3">Des couleurs et des couleurs</h3>
+        <h3 class="title_innerGalerie3">Des couleurs et des couleurs</h3>
             <div id="grid">
                 <div class="image-grid"><img src="./assets/toiles/socrate_lecume_des_couleurs.PNG" alt="Peinture nietsche_lecume_des_couleurs">
                     <p class="description_name">Mr cochon</p>
@@ -147,55 +145,34 @@
                         <p class="description_name">Zebre Prétentieux</p>
                         <p class="description_technical">Acrylique sur toile xx x xx cm</p></div>
             </div>  
-
-
-    </div>   
-     
-    
-    <!-----Grid-2------->
-       <!-- <div id="main-stage">
-           <div id="grid">
-               <h3>Des portraits colorés</h3>
-                <div class="image-grid buttonMode"><img src="http://pixel-salad.com/website/template6/img/small/small-10.jpg" data-big="http://pixel-salad.com/website/template6/img/big/big-10.jpg" alt="grid image10"></div>
-                <div class="image-grid buttonMode"><img src="http://pixel-salad.com/website/template6/img/small/small-11.jpg" data-big="http://pixel-salad.com/website/template6/img/big/big-11.jpg" alt="grid image11"></div>
-                <div class="image-grid buttonMode"><img src="http://pixel-salad.com/website/template6/img/small/small-12.jpg" data-big="http://pixel-salad.com/website/template6/img/big/big-12.jpg" alt="grid image12"></div>
-                <div class="image-grid buttonMode"><img src="http://pixel-salad.com/website/template6/img/small/small-13.jpg" data-big="http://pixel-salad.com/website/template6/img/big/big-13.jpg" alt="grid image13"></div>
-            </div>
-       </div> -->
-    <!-----Grid-3------->
-    <!-----Grid-4------->
-    <!-----Grid-5------->
-    <!-----Grid-6------->
-
+    </div>     
   <!-----Grid-end------->
-  <div id="loading-overlay">
-    <div id="canvasloader-container" class="loading-animation"></div>
-  </div>
+    <div id="loading-overlay">
+      <div id="canvasloader-container" class="loading-animation"></div>
+    </div>
 </section>
-<!------------Section 3 -About me------------->
-<section class="section3">
-<h3 class="logoTitleContact about">à propos</h3>
-<div class="aboutme">
-    <p class="abouttxt">Je m’appelle Laurène, j’ai 27 ans et j’habite près de Paris.<br> 
-        <br>
-        L’Art est un moyen d’expression qui permet de toucher le public, de créer des émotions. <br>
-        Avec beaucoup de plaisir et de couleurs je prends volontier pinceaux et crayons quand l'envie m'en prend
-        et sur une toile ou un papier explore, invente, partage un univers. 
-    </p>
-     
-    <img class="aproposimg" src="./assets/apropos-img.png" alt="">
-</div>
+<!------------Section 3-About me------------->
+<section id="anchor_about" class="section3">
+  <h3 class="logoTitleContact about">à propos</h3>
+    <div class="aboutme">
+          <p class="abouttxt">Je m’appelle Laurène, j’ai 27 ans et j’habite près de Paris.<br> 
+              <br>
+              L’Art est un moyen d’expression qui permet de toucher le public, de créer des émotions. <br>
+              Avec beaucoup de plaisir et de couleurs je prends volontier pinceaux et crayons quand l'envie m'en prend
+              et sur une toile ou un papier explore, invente, partage un univers. 
+          </p>
+        <img class="aproposimg" src="./assets/apropos-img.png" alt="">
+    </div>
 </section>
 <!-------------Section 4 - contact------------>
-<section class="s4">
-    <div class="allBoxesContact">
-        <div class="box1Contact">
+<section id="anchor_contact" class="allBoxesContact">
+        <div class="titleContact">
             <h3 class="logoTitleContact">CONTACT<br></h3>
             <span class="logoSpanContact">CONTACT@LECUMEDESCOULEURS.FR</span>
         </div>
         <img class="paperPlane" src="./assets/PaperPlaneLDCouleur.png" alt="">            
         <!------Formulaire de contact------->                        
-        <div class="box3Contact">
+        <div class="formContact">
             <form action="" methode="post" class="FormContact">   
                  <div class="identite">
                         <label for="Nom">Nom</label>
@@ -211,15 +188,15 @@
                   <div class="MessageAlign">
                       <label class="labelMessage"for="Message">&nbsp;Votre Message : </label>
                           <textarea name="Message" id="messageContact" cols="90" rows="15" 
-                           placeholder="objet de votre demande" required autofocus>
+                           placeholder="Votre message ici" required autofocus>
                           </textarea>
                   </div>  
-                  <input class="button" type="submit" value="Envoyer ✉">                  
+                  <input class="buttonSend" type="submit" value="Envoyer ✉">                  
         <!-------------FIN----------------->
-<div class="box4Contact">
-<a href="#"><img   class="rsInsta" src="./assets/img/icons/instagram-logo.png" alt="logo-instagram-lecume-des-couleurs"></a>
-<a href="#"><img    class="rsPinterest" src="./assets/img/icons/pinterest-logo.png" alt="logo-pinterest-lecume-des-couleurs"></a>
-</div>
+  <div class="boxReseaux">
+    <a href="https://www.instagram.com/lecumedescouleurs/"><img class="rsInsta" src="./assets/img/icons/instagram-logo.png" alt="logo-instagram-lecume-des-couleurs"></a>
+    <a href="https://www.pinterest.fr/Lecumedescouleurs/"><img class="rsPinterest" src="./assets/img/icons/pinterest-logo.png" alt="logo-pinterest-lecume-des-couleurs"></a>
+  </div>
 </section>           
 <div class="box5-footer"> 2020 - Lecumedescouleurs.fr - Paris</div>
 <!-------------FIN----------------->

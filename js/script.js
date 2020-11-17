@@ -5,12 +5,9 @@ let mouseCursor = document.querySelector(".cursor");
 let menu_anim_cursor = document.querySelectorAll('#menu-burger');
 let title_animate_mouse = document.querySelectorAll('.title1');
 
-// let title_animate_mouse_two = document.querySelectorAll(".bulle2 span");
-// let title_animate_mouse_one = document.querySelectorAll(".bulle1 span");
-
     window.addEventListener('mousemove', cursor);
     function cursor(e){
-    // console.log(e);
+
     mouseCursor.style.top = e.pageY + 'px';
     mouseCursor.style.left = e.pageX + 'px';
     }
@@ -30,9 +27,6 @@ let title_animate_mouse = document.querySelectorAll('.title1');
           mouseCursor.classList.add("text-pict");
       });
 	});
-	
-	//---------- 
-	
 
 //=========================================//
 //===========ANIMATION BURGER============= //
@@ -80,12 +74,12 @@ document.body.onclick = function(e){
     var prevent = false;
     while( target && !prevent ){
       // id des éléments qui ne déclenche pas la fermeture
-      if( target.id == "mainMenu" || target.id == "body" )
+      if( target.id == "mainMenu" || target.id == "body"  )
         prevent = true;
       target = target.parentNode;
     }
     // si le clique n'était pas sur un élémént de la recherhe, on cache l'élément
-    if( !prevent ){
+    if( !prevent && document.getElementById('burgerMenu')  ){
       document.getElementById('burgerMenu').style.display='none';
     }
     // ne stop pas la propagation
@@ -144,53 +138,11 @@ if(screen.width <= 1024) {
 		}
 	}, false);
 }
-//==========================================//
-//=============CLOSE MENU ================ //
-//=========================================//
-//========================================//
-// var clickedEvent = "click"; // Au clic si "touchstart" n'est pas détecté
-// window.addEventListener('touchstart', function  close_menu() {
-// 	clickedEvent = "touchstart"; // Transforme l'événement en "touchstart"
-// 	window.removeEventListener('touchstart', detectTouch, false);
-// }, false);
-
-// // Créé un "toggle class" en Javascrit natif (compatible partout)
-// burgerMenu.addEventListener(clickedEvent, function(evt) {
-// 	console.log(clickedEvent);
-// 	// Modification du menu burger
-// 	if(!this.getAttribute("class")) {
-//         this.setAttribute("class", "clicked");     
-// 	} else {
-// 		this.removeAttribute("class"); }
-// 	// Variante avec x.classList (ou DOMTokenList), pas 100% compatible avant IE 11...
-// 	// burgerMenu.classList.toggle("clicked");
-// 	// Créé l'effet pour le menu slide (compatible partout)
-// 	if(mainMenu.getAttribute("class") != "visible") {
-// 		mainMenu.setAttribute("class", "visible");
-// 	} else {
-// 		mainMenu.setAttribute("class", "invisible");
-// 	}
-// }, false
-// );
+// ==========================================//
+// =============CLOSE MENU ================ //
+// =========================================//
+// ========================================//
 
 
-$(document).ready(function(){
-    $(window).on('scroll', function () {
-    
-    var elmt   = $('.from-left, .from-right');
-    var topImg = $('.from-left, .from-right').offset().top;
-    var scroll = $(window).scrollTop();
-    
-        $(elmt).each(function() {
-            
-            var topImg = $(this).offset().top - 300;
-            
-                if ( topImg < scroll ) {
-                
-                $(this).css("transform", "translate(0,0)");
-                $(this).css("opacity", "1");
-                
-                };
-        });
-    });
-});
+
+
