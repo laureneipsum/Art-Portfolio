@@ -443,4 +443,42 @@
             transform: translateY(25px);
   }
 }
+
+@media screen and (max-width: 1194px) {
+  #statue-image {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #statue-image {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    width: 200px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #statue_txt-bienvenue {
+    font: 800 5rem Raleway, sans-serif;
+    margin: 190px 300px 0 650px;
+  }
+  #statue_txt-dans_la {
+    font: 800 6rem Raleway, sans-serif;
+    margin: 319px 100px 0 700px;
+  }
+  #statue_txt-galerie {
+    font: 800 8rem Raleway, sans-serif;
+    margin: 440px 550px 0 700px;
+  }
+  #fleche_statue {
+    margin: 35% 0 0 60%;
+  }
+}
 /*# sourceMappingURL=statue.css.map */

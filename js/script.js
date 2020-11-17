@@ -146,26 +146,12 @@ if(screen.width <= 1024) {
 
 
 
+document.getElementById("sendmail").addEventListener("submit",function() {
+	e.preventDefault();
+	alert('Message bien reçu ;-)');
+}
 
-// document.body.onclick = function(e){
-//     var evt = window.event || e; 
-//     var target = evt.target || evt.srcElement; 
-//     var prevent = false;
-//     while( target && !prevent ){
-//       // id des éléments qui ne déclenche pas la fermeture
-//       if( target.id == "mainMenu" || target.id == "body"  )
-//         prevent = true;
-// 	  target = target.parentNode;
-	  
-// 	  console.log("a chaque clique");
-//     }
-//     // si le clique n'était pas sur un élémént de la recherche, on cache l'élément
-//     if( !prevent && document.getElementById('burgerMenu')  ){
-// 	  document.getElementById('burgerMenu').style.display='none';
-//     }
-//     // ne stop pas la propagation
-//     return true;
-//   }
+)
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
