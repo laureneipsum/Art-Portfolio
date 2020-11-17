@@ -22,10 +22,10 @@
          </div>
         <nav id="menu">
             <ul>
-                <li><a href="#anchor_home">HOME</a></li>
-                <li><a href="#anchor_galerie">GALERIE</a></li>
-                <li><a href="#anchor_about">A PROPOS</a></li>
-                <li><a href="#anchor_contact">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#galerie">GALERIE</a></li>
+                <li><a href="#apropos">A PROPOS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 <!-----Section 1 - home-page with Title animate----->
@@ -63,7 +63,7 @@
 	<div class="particle"></div>
 </div>
 <!--Particules-->
-        <div id="anchor_home" class="title_animate">
+        <div id="home" class="title_animate">
             <h1 class="title1">L'écume des</h1>
             <h2 class="title2">COULEURS</h2> 
         </div>
@@ -84,28 +84,115 @@
 <!-----Section 3 - Gallery--------------------->
 <section>
     <!-----Grid-1------->
-      <div id="anchor_galerie" id="main-stage">
+    
+      <div id="galerie" id="main-stage">
+
         <h3 class="title_innerGalerie">Des portraits colorés</h3>
           <div id="grid">
-               <div class="image-grid"><img src="./assets/toiles/nietsche_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+            <!-- <div class="row"> -->
+
+            <!--test en enlevant col-->
+               <div class="image-grid" ><img src="./assets/toiles/nietsche_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs" onclick="openModal();currentSlide(1)">
                     <p class="description_name">Friedrich Nietzsche</p>
                     <p class="description_technical">Feutre noir et Acrylique - A3</p></div>
-               <div class="image-grid"><img src="./assets/toiles/BorisVian_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+           
+
+            
+               <div class="image-grid"><img src="./assets/toiles/BorisVian_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs" onclick="openModal();currentSlide(2)">
                     <p class="description_name">Boris Vian</p>
                     <p class="description_technical">Feutre noir et Acrylique - A3</p></div>
-               <div class="image-grid"><img src="./assets/toiles/Gainsbourg_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+            
+
+            <div class="col_galerie">
+                    <div class="image-grid"><img src="./assets/toiles/Gainsbourg_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs" onclick="openModal();currentSlide(3)">
                     <p class="description_name">Serge Gainsbourg</p>
                     <p class="description_technical">Feutre noir et Acrylique - A3</p></div>
-                <div class="image-grid "><img src="./assets/toiles/jimmy_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+            </div>
+
+            <div class="col_galerie">
+                <div class="image-grid "><img src="./assets/toiles/jimmy_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs" onclick="openModal();currentSlide(4)">
                     <p class="description_name">Jimi Hendrix</p>
                     <p class="description_technical">Acrylique sur toile xx x xxcm</p></div>
-                <div class="image-grid"><img src="./assets/toiles/train-lecumedescouleurs.jpg" alt="Peinture nietsche_lecume_des_couleurs">
+            </div>    
+            <div class="col_galerie">    
+                    <div class="image-grid"><img src="./assets/toiles/train-lecumedescouleurs.jpg" alt="Peinture nietsche_lecume_des_couleurs" onclick="openModal();currentSlide(5)">
                     <p class="description_name">Locomotive Micheline</p>
                     <p class="description_technical">Feutre et Acrylique - A3</p></div>
-                    <div class="image-grid"><img src="./assets/toiles/desmorceauLecumeDesCouleurs.jpg" alt="Peinture nietsche_lecume_des_couleurs">
+            </div>        
+            <div class="col_galerie">        
+                    <div class="image-grid"><img src="./assets/toiles/desmorceauLecumeDesCouleurs.jpg" alt="Peinture nietsche_lecume_des_couleurs" onclick="openModal();currentSlide(6)">
                         <p class="description_name">En vrac 1</p>
                         <p class="description_technical">Acrylique sur toile - xx x xxcm</p></div>
-            </div>  
+            </div>
+        </div> 
+    </div> 
+
+        <div id="myModal" class="modal">
+            <!-- <span class="close cursorClose" onclick="closeModal()">&times;</span> -->
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./assets/toiles/nietsche_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./assets/toiles/BorisVian_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./assets/toiles/Gainsbourg_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./assets/toiles/jimmy_lecume_des_couleurs.png" alt="Peinture nietsche_lecume_des_couleurs">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./assets/toiles/train-lecumedescouleurs.jpg" alt="Peinture nietsche_lecume_des_couleurs">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./assets/toiles/desmorceauLecumeDesCouleurs.jpg" alt="Peinture nietsche_lecume_des_couleurs">
+              </div>
+
+              <span class="close cursorClose" onclick="closeModal()">&times;</span>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!--test col bas-->
+              <div class="caption-container">
+                <p id="caption"></p>
+
+                <div class="column">
+                    <img class="demo cursorClose" src="./assets/toiles/nietsche_lecume_des_couleurs.png"style="width:10%" onclick="currentSlide(1)" alt="FRIEDRICH NIETZSCHE
+                    FEUTRE NOIR ET ACRYLIQUE - A3">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursorClose" src="./assets/toiles/BorisVian_lecume_des_couleurs.png"style="width:10%" onclick="currentSlide(2)" alt="blaaa">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursorClose" src="./assets/toiles/Gainsbourg_lecume_des_couleurs.png"style="width:10%" onclick="currentSlide(3)" alt="blablabla">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursorClose" src="./assets/toiles/jimmy_lecume_des_couleurs.png"style="width:10%" onclick="currentSlide(4)" alt="bllallalla">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursorClose" src="./assets/toiles/train-lecumedescouleurs.jpg"style="width:10%" onclick="currentSlide(5)" alt="bllallalla">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursorClose" src="./assets/toiles/desmorceauLecumeDesCouleurs.jpg"style="width:10%" onclick="currentSlide(6)" alt="bllallalla">
+                  </div>
+         <!--test col bas--> 
+              </div>
+            </div> 
+        </div> 
+
+        <!-------->
         <h3 class="title_innerGalerie2">Des animaux qui posent</h3>
             <div id="grid">
                <div class="image-grid"><img src="./assets/toiles/cochon.png" alt="Peinture nietsche_lecume_des_couleurs">
@@ -145,14 +232,16 @@
                         <p class="description_name">Zebre Prétentieux</p>
                         <p class="description_technical">Acrylique sur toile xx x xx cm</p></div>
             </div>  
-    </div>     
+    </div> 
+  
+   
   <!-----Grid-end------->
     <div id="loading-overlay">
       <div id="canvasloader-container" class="loading-animation"></div>
     </div>
 </section>
 <!------------Section 3-About me------------->
-<section id="anchor_about" class="section3">
+<section id="apropos" class="section3">
   <h3 class="logoTitleContact about">à propos</h3>
     <div class="aboutme">
           <p class="abouttxt">Je m’appelle Laurène, j’ai 27 ans et j’habite près de Paris.<br> 
@@ -165,7 +254,7 @@
     </div>
 </section>
 <!-------------Section 4 - contact------------>
-<section id="anchor_contact" class="allBoxesContact">
+<section id="contact" class="allBoxesContact">
         <div class="titleContact">
             <h3 class="logoTitleContact">CONTACT<br></h3>
             <span class="logoSpanContact">CONTACT@LECUMEDESCOULEURS.FR</span>

@@ -67,20 +67,21 @@ burgerMenu.addEventListener(clickedEvent, function(evt) {
 	}
 }, false
 );
-
+//-----modifier clique bg-----//
 document.body.onclick = function(e){
     var evt = window.event || e; 
     var target = evt.target || evt.srcElement; 
     var prevent = false;
     while( target && !prevent ){
       // id des éléments qui ne déclenche pas la fermeture
-      if( target.id == "mainMenu" || target.id == "body"  )
+      if( target.id == "mainMenu")
         prevent = true;
-      target = target.parentNode;
+	  target = target.parentNode;
+	  console.log("a chaque clique");
     }
-    // si le clique n'était pas sur un élémént de la recherhe, on cache l'élément
+    // si le clique n'était pas sur un élémént de la recherche, on cache l'élément
     if( !prevent && document.getElementById('burgerMenu')  ){
-      document.getElementById('burgerMenu').style.display='none';
+	  document.getElementById('burgerMenu').style.display='none';
     }
     // ne stop pas la propagation
     return true;
@@ -146,3 +147,62 @@ if(screen.width <= 1024) {
 
 
 
+// document.body.onclick = function(e){
+//     var evt = window.event || e; 
+//     var target = evt.target || evt.srcElement; 
+//     var prevent = false;
+//     while( target && !prevent ){
+//       // id des éléments qui ne déclenche pas la fermeture
+//       if( target.id == "mainMenu" || target.id == "body"  )
+//         prevent = true;
+// 	  target = target.parentNode;
+	  
+// 	  console.log("a chaque clique");
+//     }
+//     // si le clique n'était pas sur un élémént de la recherche, on cache l'élément
+//     if( !prevent && document.getElementById('burgerMenu')  ){
+// 	  document.getElementById('burgerMenu').style.display='none';
+//     }
+//     // ne stop pas la propagation
+//     return true;
+//   }
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+
+function openModal() {
+	document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+	document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+	showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+	showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	var captionText = document.getElementById("caption");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+	captionText.innerHTML = dots[slideIndex-1].alt;
+  }
