@@ -14,7 +14,6 @@
   left: 50%;
 }
 
-/* ZOOM ----------- */
 #main-stage {
   position: relative;
   width: auto;
@@ -152,7 +151,9 @@
 }
 
 /*----- The Modal (background) */
-.modal {
+.modal,
+.modalTwo,
+.modalThree {
   display: none;
   position: fixed;
   z-index: 100;
@@ -171,10 +172,22 @@
   max-width: 700px;
 }
 
+.modalTwo img {
+  max-height: 700px;
+  max-width: 700px;
+}
+
+.modalthree img {
+  max-height: 700px;
+  max-width: 700px;
+}
+
 /*-------Modal Content */
-.modal-content {
+.modal-content,
+.modal-contentTwo,
+.modal-contentThree {
   position: relative;
-  background-color: #161516;
+  background-color: #1e2334;
   margin: auto;
   padding: 0;
   width: 100%;
@@ -201,11 +214,13 @@
   cursor: pointer;
 }
 
-.mySlides {
+.mySlides,
+.mySlidesTwo,
+.mySlidesThree {
   display: none;
 }
 
-/*------Next & previous buttons */
+/*------Next & prev---*/
 .prev,
 .next {
   cursor: pointer;
@@ -225,7 +240,7 @@
   -webkit-user-select: none;
 }
 
-/*------Position the "next button" to the right */
+/*------Position--next --*/
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -257,19 +272,33 @@ img {
   margin-bottom: -4px;
 }
 
-.caption-container {
+.caption-container,
+.caption-containerTwo
+.caption-containerThree {
   text-align: center;
-  background-color: #161516;
+  background-color: #1e2334;
   padding: 2px 16px;
   color: white;
 }
 
-.demo {
+.demo,
+.demoTwo,
+.demoThree {
   opacity: 0.1;
 }
 
 .active,
 .demo:hover {
+  opacity: 1;
+}
+
+.activeTwo,
+.demoTwo:hover {
+  opacity: 1;
+}
+
+.activeThree
+.demoThree:hover {
   opacity: 1;
 }
 

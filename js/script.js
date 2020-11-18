@@ -144,8 +144,6 @@ if(screen.width <= 1024) {
 // =========================================//
 // ========================================//
 
-
-
 document.getElementById("sendmail").addEventListener("submit",function() {
 	e.preventDefault();
 	alert('Message bien reçu ;-)');
@@ -155,7 +153,7 @@ document.getElementById("sendmail").addEventListener("submit",function() {
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
-
+//---------GALERIE 1-----------------//
 function openModal() {
 	document.getElementById("myModal").style.display = "block";
   }
@@ -191,4 +189,81 @@ function openModal() {
 	slides[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].className += " active";
 	captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+//---------------GALERIE 2-----------------------------//
+
+  function openModalTwo() {
+	document.getElementById("myModalTwo").style.display = "block";
+  }
+  
+  function closeModalTwo() {
+	document.getElementById("myModalTwo").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlidesTwo(slideIndex);
+  
+  function plusSlidesTwo(n) {
+	showSlidesTwo(slideIndex += n);
+  }
+  
+  function currentSlideTwo(n) {
+	showSlidesTwo(slideIndex = n);
+  }
+  
+  function showSlidesTwo(n) {
+	var i;
+	var slidesTwo = document.getElementsByClassName("mySlidesTwo");
+	var dots = document.getElementsByClassName("demoTwo");
+	var captionTextTwo = document.getElementById("captionTwo");
+	if (n > slidesTwo.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slidesTwo.length; i++) {
+		slidesTwo[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slidesTwo[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+	captionTextTwo.innerHTML = dots[slideIndex-1].alt;
+  }
+  //----------------GALERIE 3----------------------------//
+
+  function openModalThree() {
+	document.getElementById("myModalThree").style.display = "block";
+  }
+  
+  function closeModalThree() {
+	document.getElementById("myModalThree").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlidesThree(slideIndex);
+  
+  function plusSlidesThree(n) {
+	showSlidesThree(slideIndex += n);
+  }
+  
+  function currentSlideThree(n) {
+	showSlidesThree(slideIndex = n);
+  }
+  
+  function showSlidesThree(n) {
+	var i;
+	var slidesThree= document.getElementsByClassName("mySlidesThree");
+	var dots = document.getElementsByClassName("demoThree");
+	var captionTextThree = document.getElementById("captionThree");
+	if (n > slidesThree.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slidesThree.length; i++) {
+		slidesThree[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slidesThree[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+	captionTextThree.innerHTML = dots[slideIndex-1].alt;
   }
