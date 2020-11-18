@@ -512,6 +512,7 @@ $bg-black: #1e2334;
    background-color: #2a3046; 
    grid-area: footer; 
    height: 15vh;
+   width: 100vh;
    text-align: center;
    padding-top: 1.5%;
    margin-top: 0;
@@ -555,7 +556,7 @@ $bg-black: #1e2334;
    font: 700 7rem Raleway, sans-serif;
   }
 .aproposimg {
-  width: 10em;
+  width: 20em;
   height: auto;
   }
   .paperPlane{
@@ -564,5 +565,212 @@ $bg-black: #1e2334;
  }
 
  @media screen and (max-width: 780px){ 
+  #menu-burger {
+    position: fixed;
+    display: flex;
+    font-size: 2.2rem;
+    z-index: 1;
+    margin-right: 45%;
+  }
+  #menu {
+    position:fixed; 
+    z-index:99; 
+    left: 100%; 
+    top:auto; 
+    background: #063b6dc4;
+    padding:4em 2em; 
+    width: 20%;
+    min-height: 80%; 
+  }
+ }
+ @media screen and (max-width: 500px){ 
+  h1 {
+    padding: 4px 0;
+    font: 700 3rem Raleway, sans-serif;
+    
+  }
+  h2 {
+   font: 700 5rem Raleway, sans-serif;
+  }
+  .title_animate {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.text_home {
+text-align: center;
+margin-right: -20%;
+font-size: 0.8em;
+margin-top: -15%;
+}
 
+  
+  #menu-burger {
+    position: fixed;
+    display: flex;
+    font-size: 2.2rem;
+    z-index: 1;
+    margin-right: 45%;
+  }
+  #menu ul li a {
+    display:block; 
+    color:#fff; 
+    text-decoration:none; 
+    font: 700 2rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:.5s; 
+    text-align: start; 
+    margin-bottom: 1em; 
+    width:40%;
+
+  }
+  #menu {
+    position:fixed; 
+    z-index:99; 
+    left: 100%; 
+    top:auto; 
+    background: #063b6dc4;
+    padding:4em 2em; 
+    width: 20%;
+    min-height: 80%; 
+  }
+  .title_innerGalerie3{
+    font-size: 40px;
+  }
+  .title_innerGalerie2{
+    font-size: 50px;
+  }
+  .title_innerGalerie{
+    font-size: 50px;
+  }
+  .scrollDown{
+  margin-left: 55%;
+  }
+  .logoTitleContact{
+    font-size: 60px;
+   }
+   .abouttxt{
+    margin: auto;
+    width: 30em;
+    font-size: 15px;
+  }
+  .aboutme {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  //* form mobile**//
+  .allBoxesContact{
+    display: flex;
+    
+     justify-content: center;
+     flex-direction: column;
+    margin-bottom: 20px;
+     margin: 10px;
+    z-index: 1;                  
+  }
+  .titleContact{    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }  
+  .logoSpanContact{
+      font: 700 1.21rem Raleway, sans-serif;  
+  }  
+  .formContact{            
+      background-color: #08080815; 
+      font: 700 1rem Raleway, sans-serif;
+      // margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: stretch;
+      // width: 20%;
+  }  
+  input  {
+      background-color:$bg-black;
+      border:  1px solid $base-pink;
+      border-radius: 1px;
+      height: 40px;
+      color: $pur-white; 
+      width: 60vh;
+  }
+  textarea {
+    background-color:$bg-black;
+    border:  2px solid $base-pink;
+    border-radius: 5px;
+    color: $pur-white;
+    width: 60vh;
+    display: flex;
+  }
+  .identite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .objet{
+    display: flex;
+    justify-content: space-around;
+        input{
+            width: 80%;
+        }
+  }
+  .messageAlign{
+    display: flex;
+        input{
+            width: 80%;
+      }
+  }
+  textarea::placeholder {
+    color: #41414163;
+    font: 700 1.4rem Raleway, sans-serif;
+  }
+  input::placeholder {
+    color: #41414163; 
+    font: 700 1.4rem Raleway, sans-serif; 
+  }
+  .buttonSend {
+    width: 40%;
+    float: right;
+    margin-top: 15px;
+    color:$pur-white;
+    font: 700 1.4rem Raleway, sans-serif;
+    &:hover {
+      background: $base-pink;
+    }
+  }
+  .boxReseaux{              
+    background-color: $bg-black;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+ }  
+    .rsInsta{
+        width: 2em;
+        margin-bottom: 40%;  
+        margin-right: 15px;  
+         &:hover{
+        transform: scale(1.3);   
+        }}
+         .rsPinterest{
+         width: 2em;  
+           &:hover{
+        transform: scale(1.3);   
+        }}
+  .box5-footer{ 
+    background-color: #2a3046; 
+    grid-area: footer; 
+    height: 15vh;
+    width: 100vh;
+   
+    padding-top: 1.5%;
+    margin-top: 0;
+    display: flex;
+    justify-content: start;
+  }  
  }

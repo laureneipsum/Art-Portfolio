@@ -481,4 +481,53 @@
     margin: 35% 0 0 60%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #statue-image {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5px;
+  }
+  #statue_txt-bienvenue {
+    font: 800 3rem Raleway, sans-serif;
+    margin: 230px 100px 0 700px;
+  }
+  #statue_txt-dans_la {
+    font: 800 4rem Raleway, sans-serif;
+    margin: 300px 100px 0 700px;
+    z-index: 6;
+  }
+  #statue_txt-galerie {
+    font: 800 6rem Raleway, sans-serif;
+    margin: 440px 550px 0 700px;
+  }
+  #fleche_statue {
+    margin: 35% 0 0 60%;
+  }
+  #statue_head {
+    width: 20%;
+    margin-left: 650px;
+  }
+  #statue_brow {
+    width: 20%;
+    margin-left: 650px;
+  }
+  #statue_eyes {
+    width: 20%;
+    margin-left: 650px;
+    z-index: 4;
+  }
+  #statue_piedestal {
+    width: 20%;
+    margin-left: 650px;
+  }
+}
 /*# sourceMappingURL=statue.css.map */
